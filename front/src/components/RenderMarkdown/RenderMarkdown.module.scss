@@ -1,0 +1,14 @@
+.RenderMarkdown {
+  width: 100%;
+  gap: 10px;
+  overflow-x: auto;
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  code {
+    white-space: pre-wrap;
+  }
+}

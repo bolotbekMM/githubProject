@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+*::-webkit-scrollbar {
+  background-color: transparent;
+  width: 18px;
+  height: 0;
+}
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #a8bbbf;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+body {
+  margin: 0;
+  height: 100%;
+  background-color: rgb(244, 246, 248);
+  overflow: overlay;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.imageRenderer {
+  width: 500px;
+  height: auto;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  all: unset;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input,
+button,
+textarea {
+  outline: none;
+  background: none;
+  border: none;
+  color: inherit;
+  font-size: inherit;
+}
+textarea {
+  resize: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0px 80px;
+}
+
+@media screen and (max-width: 1440px) {
+  .container {
+    width: 1300px;
+    padding: 0px 60px;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .container {
+    padding: 0px 40px;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .container {
+    width: 1160px;
+    padding: 0px 40px;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .container {
+    width: 1092.8px;
+    padding: 0px 40px;
+  }
+}
+@media screen and (max-width: 1092.8px) {
+  .container {
+    width: 100vw;
+    padding: 0px 40px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding: 0px 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,126 @@
+.issuesList {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  border-radius: 5px;
+  //   padding: 20px 0px;
+  width: 100%;
+  margin: 30px 0px 0px 0px;
+}
+.noIssues {
+  margin: 20px;
+  text-align: center;
+}
+
+.issue {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  //   margin-bottom: 20px;
+  width: 100%;
+  padding: 10px 20px;
+  gap: 20px;
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(244, 246, 248);
+  }
+
+  .firsBox {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .secondBox {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .issueNumber {
+    font-weight: 500;
+    font-size: 12px;
+    margin-right: 5px;
+  }
+
+  .issueTitle {
+    font-size: 14px;
+  }
+  .isTitle {
+    font-size: 14px;
+    font-weight: 600;
+  }
+  // @media screen and (max-width: 765px) {
+  //   padding: 10px;
+
+  //   .firsBox {
+  //     display: flex;
+  //     flex-direction: row;
+  //     align-items: end;
+
+  //     white-space: nowrap;
+  //     overflow: hidden;
+  //     text-overflow: ellipsis;
+  //   }
+  //   .secondBox {
+  //     position: absolute;
+  //     top: 5px;
+  //     right: 10px;
+  //   }
+  //   .issueNumber {
+  //     font-weight: 400;
+  //     font-size: 11px;
+  //   }
+  // }
+}
+/* StatisticsPage.module.scss */
+
+.pagination {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  // margin: 0 5px;
+  color: #333;
+  transition: color 0.3s ease;
+
+  // &:hover {
+  //   color: #007bff;
+  // }
+}
+.pagButton {
+  padding: 0 6px;
+  margin: 5px;
+  border: 1px solid rgb(83, 80, 80);
+  cursor: pointer;
+}
+
+.pagButtonActive {
+  padding: 0 6px;
+  margin: 5px;
+  border: 1px solid #007bff;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.active {
+  color: #007bff;
+  font-weight: bold;
+}

@@ -1,0 +1,55 @@
+.header {
+  width: 100%;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(4, 25, 54, 0.904);
+  margin: 0;
+  @media screen and (max-width: 765px) {
+    height: 50px;
+  }
+
+  .mainPart {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    @media screen and (max-width: 765px) {
+      gap: 10px;
+    }
+
+    .stat {
+      position: absolute;
+      bottom: 6px;
+      right: 10px;
+      color: #ffffff;
+      font-size: 12px;
+    }
+    img {
+      width: 45px;
+      height: 45px;
+      @media screen and (max-width: 765px) {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    h1 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 130%;
+      letter-spacing: -0.01em;
+      color: #ffffff;
+      @media screen and (max-width: 765px) {
+        font-size: 18px;
+        line-height: 100%;
+      }
+    }
+  }
+}
